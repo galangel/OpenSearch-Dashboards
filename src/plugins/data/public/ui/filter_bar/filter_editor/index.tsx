@@ -342,6 +342,7 @@ class FilterEditorUI extends Component<Props, State> {
         label={i18n.translate('data.filter.filterEditor.queryDslLabel', {
           defaultMessage: 'OpenSearch Query DSL',
         })}
+        fullWidth={true}
       >
         <EuiCodeEditor
           value={this.state.queryDsl}
