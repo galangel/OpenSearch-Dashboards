@@ -283,7 +283,7 @@ class FilterEditorUI extends Component<Props, State> {
       >
         <FieldComboBox
           id="fieldInput"
-          fullWidth
+          fullWidth={true}
           isDisabled={!selectedIndexPattern}
           placeholder={this.props.intl.formatMessage({
             id: 'data.filter.filterEditor.fieldSelectPlaceholder',

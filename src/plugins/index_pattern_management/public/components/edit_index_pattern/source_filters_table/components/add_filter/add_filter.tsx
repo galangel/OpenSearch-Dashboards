@@ -60,7 +60,7 @@ export const AddFilter = ({ onAddFilter }: AddFilterProps) => {
     <EuiFlexGroup>
       <EuiFlexItem grow={10}>
         <EuiFieldText
-          fullWidth
+          fullWidth={true}
           value={filter}
           onChange={(e) => setFilter(e.target.value.trim())}
           placeholder={sourcePlaceholder}

@@ -69,6 +69,7 @@ export function GenericComboBox<T>(props: GenericComboBoxProps<T>) {
 
   return (
     <EuiComboBox
+      fullWidth={true}
       options={euiOptions}
       selectedOptions={selectedEuiOptions}
       onChange={onComboBoxChange}

@@ -49,7 +49,7 @@ class PhraseValueInputUI extends PhraseSuggestorUI<Props> {
   public render() {
     return (
       <EuiFormRow
-        fullWidth
+        fullWidth={true}
         label={this.props.intl.formatMessage({
           id: 'data.filter.filterEditor.valueInputLabel',
           defaultMessage: 'Value',
@@ -59,6 +59,7 @@ class PhraseValueInputUI extends PhraseSuggestorUI<Props> {
           this.renderWithSuggestions()
         ) : (
           <ValueInputType
+            fullWidth={true}
             placeholder={this.props.intl.formatMessage({
               id: 'data.filter.filterEditor.valueInputPlaceholder',
               defaultMessage: 'Enter a value',
@@ -84,7 +85,7 @@ class PhraseValueInputUI extends PhraseSuggestorUI<Props> {
           id: 'data.filter.filterEditor.valueSelectPlaceholder',
           defaultMessage: 'Select a value',
         })}
-        fullWidth
+        fullWidth={true}
         options={options}
         getLabel={(option) => option}
         selectedOptions={value ? [valueAsStr] : []}
